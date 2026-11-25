@@ -8,10 +8,10 @@ the website, student and instructor notebooks, and solution files.
 
 Do these once, after pushing this repository to GitHub.
 
-- [ ] **Make the repository public.** Colab and Kaggle read the notebooks from raw GitHub URLs.
-- [ ] **Turn on GitHub Pages.** Settings → Pages → **Source: GitHub Actions**. Add the custom domain there if you have one (no `CNAME` file needed).
-- [ ] **Allow workflows to push.** Settings → Actions → General → Workflow permissions → **Read and write**. CI publishes the generated notebooks to the `notebooks-branch` branch, which it creates on the first run.
-- [ ] **Push to `main`.** The `Course` workflow publishes the notebooks and the site.
+- [x] **Make the repository public.** Colab and Kaggle read the notebooks from raw GitHub URLs.
+- [x] **Turn on GitHub Pages.** Settings → Pages → **Source: GitHub Actions**. Add the custom domain there if you have one (no `CNAME` file needed).
+- [x] **Allow workflows to push.** Settings → Actions → General → Workflow permissions → **Read and write**. CI publishes the generated notebooks to the `notebooks-branch` branch, which it creates on the first run.
+- [x] **Push to `main`.** The `Course` workflow publishes the notebooks and the site.
 - [ ] **Replace the example day** in `tutorials/` and the stub in `projects/` with your own, and update `project.toc` in `myst.yml`.
 - [ ] **Optional: collect feedback.** Fill in the commented `nma.feedback` block in `myst.yml` with your own datatops project, then add `{nma-feedback}` to your pages.
 
