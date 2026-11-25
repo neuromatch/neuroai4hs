@@ -5,6 +5,7 @@ extend: https://cdn.jsdelivr.net/npm/@neuromatch/course-kit@0.4/dist/nma.yml
 project:
   title: "Neuro AI for High School"
   authors:
+    - name: "Neuromatch"
     - name: "Konstantine Tsafatinos"
   github: https://github.com/neuromatch/neuroai4hs
   toc:
