@@ -36,19 +36,19 @@ jobs:
   # `nma-kit init --preview` in a fresh folder to compare). The job needs the
   # CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets and the
   # CLOUDFLARE_PROJECT variable.
-#   preview:
-#     if: >-
-#       github.event_name == 'pull_request' &&
-#       github.event.pull_request.head.repo.full_name == github.repository
-#     uses: neuromatch/course-kit/.github/workflows/course-preview.yml@v0.4
-#     with:
-#       pr-number: ${{ github.event.pull_request.number }}
-#       action: ${{ github.event.action == 'closed' && 'cleanup' || 'deploy' }}
-#       cloudflare-project: ${{ vars.CLOUDFLARE_PROJECT }}
-#       # Also preview the instructor site: the project the `publish` job deploys it to.
-#       # Empty or unset: no instructor preview.
-#       instructor-cloudflare-project: ${{ vars.CLOUDFLARE_INSTRUCTOR_PROJECT }}
-#     secrets: inherit
-#     permissions:
-#       contents: write
-#       pull-requests: write
+  preview:
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    uses: neuromatch/course-kit/.github/workflows/course-preview.yml@v0.4
+    with:
+      pr-number: ${{ github.event.pull_request.number }}
+      action: ${{ github.event.action == 'closed' && 'cleanup' || 'deploy' }}
+      cloudflare-project: ${{ vars.CLOUDFLARE_PROJECT }}
+      # Also preview the instructor site: the project the `publish` job deploys it to.
+      # Empty or unset: no instructor preview.
+      instructor-cloudflare-project: ${{ vars.CLOUDFLARE_INSTRUCTOR_PROJECT }}
+    secrets: inherit
+    permissions:
+      contents: write
+      pull-requests: write
