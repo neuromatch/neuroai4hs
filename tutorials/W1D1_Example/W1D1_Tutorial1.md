@@ -91,6 +91,14 @@ plt.show()
 ```
 ::::
 
+```{code-cell} python
+print("hello world")
+```
+
+:::{nma-instructor}
+Hello world as an instructor!
+:::
+
 ---
 # Summary
 
